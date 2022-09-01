@@ -1,12 +1,35 @@
 {
   "name": "vue3vis",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Vue 3 compatible adapter for the vis.js Library",
+  "main": "index.ts",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=16 <18"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "packageManager": "pnpm@7.9.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michealroberts/vue3vis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michealroberts/vue3vis/issues"
+  },
+  "homepage": "https://github.com/michealroberts/vue3vis#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "turbo": "^1.4.3"
+  }
 }
