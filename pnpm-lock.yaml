@@ -17,18 +17,20 @@ importers:
       vis-timeline: ^7.7.0
       vis-util: ^5.0.3
       vite: ^3.0.7
-      vue: ^3.2.37
+      vue: ^3.2.38
+      vue-demi: ^0.13.11
       vue-tsc: ^0.39.5
     dependencies:
       '@vueuse/core': 9.1.1_vue@3.2.38
       vis-data: 7.1.4_vis-util@5.0.3
       vis-timeline: 7.7.0_44yqyqqoc3xttz4xij3imru6um
       vis-util: 5.0.3
-      vue: 3.2.38
+      vue-demi: 0.13.11_vue@3.2.38
     devDependencies:
       '@vitejs/plugin-vue': 3.0.3_vite@3.0.9+vue@3.2.38
       typescript: 4.8.2
       vite: 3.0.9
+      vue: 3.2.38
       vue-tsc: 0.39.5_typescript@4.8.2
 
 packages:
