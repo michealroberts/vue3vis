@@ -3,6 +3,7 @@
   "pipeline": {
     "dev": {
       "outputs": []
-    }
+    },
+    "test": {}
   }
 }

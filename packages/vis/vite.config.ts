@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
@@ -6,6 +7,19 @@ import typescript from '@rollup/plugin-typescript'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  test: {
+    environment: 'jsdom',
+    deps: {
+      inline: [
+        "vis-timeline",
+        "vis-util"
+      ]
+    },
+    globals: true,
+    passWithNoTests: true,
+    testTimeout: 20000,
+    watch: false
+  },
   plugins: [
     typescript({
       tsconfig: './tsconfig.json'
