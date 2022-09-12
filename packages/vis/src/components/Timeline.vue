@@ -28,7 +28,7 @@ const props = defineProps({
     }
   },
   currentTime: {
-    type: Date,
+    type: Date as PropType<Date>,
     required: false,
     default: () => {
       return new Date()
@@ -65,7 +65,7 @@ const props = defineProps({
       "timechanged"
     ]
   }
-})  
+})
 
 const emit = defineEmits<{
   (e: TimelineEvents, value: any): void
@@ -101,7 +101,7 @@ const {
   items: props.items, 
   groups: props.groups, 
   options: props.options,
-  currentTime: props.currentTime
+  currentTime: ref(props.currentTime)
 })
 
 onMounted(() => {
