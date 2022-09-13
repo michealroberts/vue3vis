@@ -31,6 +31,7 @@
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
+    "concurrently": "^7.4.0",
     "turbo": "^1.4.3"
   }
 }

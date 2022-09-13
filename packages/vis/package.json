@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test": "vitest run --watch false"
+    "test": "concurrently 'pnpm run test:vue2' 'pnpm run test:vue3'",
+    "test:vue2": "vue-demi-switch 2 vue2 && vitest run --silent",
+    "test:vue3": "vue-demi-switch 3 && vitest run --silent"
   },
   "dependencies": {
     "@vueuse/core": "^9.1.1",
@@ -29,6 +31,7 @@
     "vite": "^3.0.7",
     "vitest": "^0.23.1",
     "vue": "^3.2.38",
+    "vue2": "npm:vue@2.7.10",
     "vue-tsc": "^0.39.5"
   },
   "peerDependencies": {
