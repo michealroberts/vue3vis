@@ -1,7 +1,7 @@
 {
   "name": "vue3vis",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "./dist/vue3vis.umd.js",
   "module": "./dist/vue3vis.es.js",
