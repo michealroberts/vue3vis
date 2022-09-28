@@ -17,6 +17,9 @@ jobs:
         os: [ubuntu-latest]
         node: [14,15,16,17,18]
 
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@master
