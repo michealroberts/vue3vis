@@ -31,6 +31,7 @@
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@changesets/cli": "^2.24.4",
     "concurrently": "^7.4.0",
     "turbo": "^1.4.3"
   }
