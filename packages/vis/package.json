@@ -3,14 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./src/index.ts",
+  "main": "./dist/vue3vis.umd.js",
+  "module": "./dist/vue3vis.es.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "concurrently 'pnpm run test:vue2' 'pnpm run test:vue3'",
     "test:vue2": "vue-demi-switch 2 vue2 && vitest run --silent",
-    "test:vue3": "vue-demi-switch 3 && vitest run --silent"
+    "test:vue3": "vue-demi-switch 3 && vitest run --silent",
+    "postinstall": "pnpm run build"
   },
   "dependencies": {
     "@vueuse/core": "^9.1.1",
