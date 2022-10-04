@@ -66,9 +66,11 @@ const props = defineProps({
     ],
   },
 });
+
 const emit = defineEmits<{
   (e: TimelineEvents, value: any): void;
 }>();
+
 const {
   timeline,
   selection,
@@ -101,8 +103,10 @@ const {
   options: props.options,
   currentTime: ref(props.currentTime),
 });
+
 onMounted(() => {
   if (!timeline.value) return;
+  
   props.events.forEach((event) => {
     timeline.value?.on(event, (props) => emit(event, props));
   });

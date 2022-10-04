@@ -1,5 +1,4 @@
 import { 
-  computed, 
   onMounted, 
   onUnmounted, 
   ref, 
@@ -43,7 +42,7 @@ export interface UseTimelineParams {
    * Timeline options.
    * 
    */
-   options?: TimelineOptions
+  options?: TimelineOptions
   /**
    * 
    * 
