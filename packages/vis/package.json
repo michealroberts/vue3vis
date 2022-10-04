@@ -6,6 +6,9 @@
   "main": "./dist/vue3vis.umd.js",
   "module": "./dist/vue3vis.es.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
