@@ -1,6 +1,6 @@
 {
   "name": "vue3vis",
-  "private": true,
+  "private": false,
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/vue3vis.umd.js",
