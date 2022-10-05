@@ -61,6 +61,6 @@ jobs:
         run: pnpm build
 
       - name: Publish 🚀
-        run: pnpm publish -r
+        run: pnpm publish -r --no-git-checks
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
