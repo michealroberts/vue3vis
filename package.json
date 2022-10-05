@@ -25,6 +25,7 @@
   "homepage": "https://github.com/michealroberts/vue3vis#readme",
   "scripts": {
     "dev": "turbo run dev",
+    "build": "turbo run build",
     "test": "turbo run test"
   },
   "keywords": [],
